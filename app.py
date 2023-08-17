@@ -26,7 +26,6 @@ with st.sidebar:
 
 def main():
     load_dotenv()
-    os.environ["FAISS_NO_AVX2"] = "False"
     st.header("Chat PDF App")
 
     if pdf := st.file_uploader("Upload your PDF", type="pdf"):
